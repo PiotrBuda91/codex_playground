@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop Layout Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #container {
+      border: 1px solid #ccc;
+      width: 800px;
+      height: 600px;
+      margin-bottom: 10px;
+    }
+    #legend div {
+      margin: 4px 0;
+    }
+    .color-box {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin-right: 6px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Shop Layout Generator</h1>
+  <div id="controls">
+    <button id="redoBtn">Redo</button>
+    <button id="pdfBtn">Export PDF</button>
+  </div>
+  <div id="container"></div>
+  <div id="legend"></div>
+
+  <!-- React and ReactDOM -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <!-- Konva -->
+  <script src="https://unpkg.com/konva@8/konva.min.js"></script>
+  <script src="https://unpkg.com/react-konva@18/umd/react-konva.js"></script>
+  <!-- jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <!-- App code -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
